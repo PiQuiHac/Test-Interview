@@ -43,7 +43,6 @@ const inputFromKeyboard = () => {
       "Enter the elements of the array, separated by spaces (example: 1 2 3 4 5): ",
       (input) => {
         rl.close();
-        console.log("input: ", input);
         const array = input.split(" ").map((item) => Number(item.trim()));
         resolve(array);
       }
