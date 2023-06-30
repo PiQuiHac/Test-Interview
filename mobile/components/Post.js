@@ -6,7 +6,7 @@ const Post = (props) => {
       <View style={styles.header}>
         <Image
           source={require("../assets/logoApp.png")}
-          style={styles.logo}
+          style={styles.logoCompany}
         ></Image>
         <View style={styles.author}>
           <View style={styles.info}>
@@ -15,7 +15,7 @@ const Post = (props) => {
           </View>
           <Image
             source={require("../assets/avatar.png")}
-            style={styles.logo}
+            style={styles.logoAvatar}
           ></Image>
         </View>
       </View>
@@ -40,8 +40,13 @@ const styles = StyleSheet.create({
     paddingRight: 10,
     flexDirection: "row",
     justifyContent: "space-between",
+    alignItems: "center",
   },
-  logo: {
+  logoAvatar: {
+    width: 40,
+    height: 40,
+  },
+  logoCompany: {
     width: 50,
     height: 50,
   },
@@ -50,18 +55,20 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   handi: {
-    fontSize: 12,
+    fontSize: 9,
     color: "grey",
+    fontWeight: "400",
+    opacity: 0.8,
   },
   name: {
-    fontSize: 12,
-    fontWeight: 500,
+    fontSize: 9,
+    fontWeight: 400,
   },
   author: {
     flexDirection: "row",
   },
   slogan: {
-    backgroundColor: "green",
+    backgroundColor: "#29b363",
     paddingTop: 30,
     paddingBottom: 30,
     alignItems: "center",
@@ -79,14 +86,8 @@ const styles = StyleSheet.create({
     marginTop: 50,
     paddingLeft: 20,
     paddingRight: 20,
+    color: "#727272",
   },
-  notify: {
-    color: "grey",
-    fontSize: 12,
-    textAlign: "center",
-  },
-  button: {},
-  footer: {},
 });
 
 export default Post;

@@ -110,18 +110,16 @@ const styles = StyleSheet.create({
   },
 
   buttonFunny: {
-    backgroundColor: "#0275d8",
+    backgroundColor: "#2c7edb",
     paddingHorizontal: 10,
     paddingVertical: 10,
-    borderRadius: 5,
     marginRight: 30,
   },
 
   buttonNotFunny: {
-    backgroundColor: "green",
+    backgroundColor: "#29b363",
     paddingHorizontal: 10,
     paddingVertical: 10,
-    borderRadius: 5,
   },
 
   funny: {
@@ -136,7 +134,7 @@ const styles = StyleSheet.create({
     borderTopColor: "#ccc",
     borderTopWidth: 1,
     padding: 10,
-    color: "grey",
+    color: "#727272",
     fontSize: 12,
     textAlign: "center",
   },
