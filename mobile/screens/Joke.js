@@ -76,7 +76,7 @@ const Joke = () => {
             style={styles.buttonNotFunny}
             onPress={() => handleNextPost("not fun")}
           >
-            <Text style={styles.funny}>This is not Funny.</Text>
+            <Text style={styles.funny}>This is not funny.</Text>
           </TouchableOpacity>
         </View>
 
